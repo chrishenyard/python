@@ -1,9 +1,13 @@
 # import array
 
+from array import array
+
 """
 
 Given a sorted array of integers from min to max, square them and return the results sorted
-from min to max
+from min to max.
+
+The answer to a video on YouTube located here: https://www.youtube.com/watch?v=4eWKHLSRHPY
 
 """
 
