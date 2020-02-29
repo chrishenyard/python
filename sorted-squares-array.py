@@ -4,6 +4,7 @@ from array import array
 
 """
 
+
 Given a sorted array of integers from min to max, square them and return the results sorted
 from min to max.
 
@@ -11,7 +12,8 @@ The answer to a video on YouTube located here: https://www.youtube.com/watch?v=4
 
 """
 
-def SortedSquaresArray(x = [-10, -8, -3, -1, 4, 6, 12, 13]):
+
+def SortedSquaresArray(x=[-10, -8, -3, -1, 4, 6, 12, 13]):
 
     sorted = ValidateArrayIsSorted(x)
 
@@ -20,7 +22,7 @@ def SortedSquaresArray(x = [-10, -8, -3, -1, 4, 6, 12, 13]):
 
     sortedSquaredOutput = [0 for _ in range(len(x))]
 
-    minIndex  = 0
+    minIndex = 0
     maxIndex = index = len(x) - 1
 
     for _ in range(len(x)):
@@ -40,10 +42,11 @@ def SortedSquaresArray(x = [-10, -8, -3, -1, 4, 6, 12, 13]):
 
     return sortedSquaredOutput
 
+
 def ValidateArrayIsSorted(array):
     flag = 0
-    
-    if(all(array[i] <= array[i + 1] for i in range(len(array)-1))): 
+
+    if(all(array[i] <= array[i + 1] for i in range(len(array)-1))):
         flag = 1
 
     return flag
@@ -53,10 +56,3 @@ sortedSquaredOutput = SortedSquaresArray()
 
 
 print(sortedSquaredOutput)
-
-
- 
-
-
-
-
